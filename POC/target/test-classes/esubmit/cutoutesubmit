@@ -1,0 +1,124 @@
+
+  @Scenario1 
+  Scenario: Check API result as created with result 201
+    Given I have created a new get request with Data #details need to be defined if we are going to use DB
+    | Data                       | Data1                                            |
+    | "requisitionId":           | "VCP012345"                                      |
+    | "secondaryRequisitionId":  | "string"                                         |
+    | "customerId":              | "G700, ISTI, 39488"                              |
+    | "veterinarian":            | "DR SMITH"                                       |
+    |"clinicalDetails":          | "Fluffy has a history of low blood glucose."     |
+    |"previousRequisitionId":    | "string"                                         |
+    |"collectionDate":           | "2018-02-26"                                     |
+    And the <patientData> has been populated with <details> 
+    | PatientData       | details      |
+    |  "firstname":     | "string"     |
+    |  "lastName":      | "string"     |
+    |  "street1":       | "string"     |
+    |  "street2":       | "string"	   |
+    |  "street3":       | "string"     |
+    |  "street4":       | "string"     |
+    |  "city":          | "string"	   |
+    |  "stateProvince": | "string"     |
+    |  "postalCode":    | "string"     |
+    |  "country":       | "string"     | 
+    And I have ordered the following <testCodes> <test> 
+    | TestCode | test     |
+    |          | "GCUP"   |
+    When I submit the request   
+    Then The result should <return> <text>
+    | Return   | text   |
+    | 200      | OK     |
+
+ @Scenario1 
+  Scenario: Check API result as created with result 201
+    Given I have created a new get request with <Data> <Details> #details need to be defined if we are going to use DB
+    | Data                       | Data1                                            |
+    | "requisitionId":           | "VCP012345"                                      |
+    | "secondaryRequisitionId":  | "string"                                         |
+    | "customerId":              | "G700, ISTI, 39488"                              |
+    | "veterinarian":            | "DR SMITH"                                       |
+    |"clinicalDetails":          | "Fluffy has a history of low blood glucose."     |
+    |"previousRequisitionId":    | "string"                                         |
+    |"collectionDate":           | "2018-02-26"                                     |
+    And the <patientData> has been populated with <details> 
+    | PatientData       | details      |
+    |  "firstname":     | "string"     |
+    |  "lastName":      | "string"     |
+    |  "street1":       | "string"     |
+    |  "street2":       | "string"	   |
+    |  "street3":       | "string"     |
+    |  "street4":       | "string"     |
+    |  "city":          | "string"	   |
+    |  "stateProvince": | "string"     |
+    |  "postalCode":    | "string"     |
+    |  "country":       | "string"     | 
+    And I have ordered the following <testCodes> <test> 
+    | TestCode | test     |
+    |          | "GCUP"   |
+    When I submit the request   
+    Then The result should <return> <text>
+    | Return   | text   |
+    | 200      | OK     |
+
+ @Scenario2 
+  Scenario: Check API result as created with result 201
+    Given I have created a new get request with <Data> <Details> #details need to be defined if we are going to use DB
+    | Data                       | Data1                                            |
+    | "requisitionId":           | "VCP012345"                                      |
+    | "secondaryRequisitionId":  | "string"                                         |
+    | "customerId":              | "G700, ISTI, 39488"                              |
+    | "veterinarian":            | "DR SMITH"                                       |
+    |"clinicalDetails":          | "Fluffy has a history of low blood glucose."     |
+    |"previousRequisitionId":    | "string"                                         |
+    |"collectionDate":           | "2018-02-26"                                     |
+    And the <patientData> has been populated with <details> 
+    | PatientData       | details      |
+    |  "firstname":     | "string"     |
+    |  "lastName":      | "string"     |
+    |  "street1":       | "string"     |
+    |  "street2":       | "string"	   |
+    |  "street3":       | "string"     |
+    |  "street4":       | "string"     |
+    |  "city":          | "string"	   |
+    |  "stateProvince": | "string"     |
+    |  "postalCode":    | "string"     |
+    |  "country":       | "string"     | 
+    And I have ordered the following <testCodes> <test> 
+    | TestCode | test     |
+    |          | "GCUP"   |
+    When I submit the request   
+    Then The result should <return> <text>
+    | Return   | text   |
+    | 200      | OK     |
+
+ @Scenario1 
+  Scenario: Check API result as created with result 201
+    Given I have created a new get request with <Data> <Details> #details need to be defined if we are going to use DB
+    | Data                       | Data1                                            |
+    | "requisitionId":           | "VCP012345"                                      |
+    | "secondaryRequisitionId":  | "string"                                         |
+    | "customerId":              | "G700, ISTI, 39488"                              |
+    | "veterinarian":            | "DR SMITH"                                       |
+    |"clinicalDetails":          | "Fluffy has a history of low blood glucose."     |
+    |"previousRequisitionId":    | "string"                                         |
+    |"collectionDate":           | "2018-02-26"                                     |
+    And the <patientData> has been populated with <details> 
+    | PatientData       | details      |
+    |  "firstname":     | "string"     |
+    |  "lastName":      | "string"     |
+    |  "street1":       | "string"     |
+    |  "street2":       | "string"	   |
+    |  "street3":       | "string"     |
+    |  "street4":       | "string"     |
+    |  "city":          | "string"	   |
+    |  "stateProvince": | "string"     |
+    |  "postalCode":    | "string"     |
+    |  "country":       | "string"     | 
+    And I have ordered the following <testCodes> <test> 
+    | TestCode | test     |
+    |          | "GCUP"   |
+    When I submit the request   
+    Then The result should <return> <text>
+    | Return   | text   |
+    | 200      | OK     |
